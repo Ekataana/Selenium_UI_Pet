@@ -3,10 +3,10 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators:
     LOGIN_BUTTON = (By.CSS_SELECTOR, '#app > header > div > ul > li:nth-child(1) > a')
-    FILTER_BY_PET_TYPE_BUTTON = (By.CSS_SELECTOR, '#pv_id_41 > div > span')
-    DOG_PET_TYPE_FILTER = (By.ID, 'pv_id_13_0')
-    FILTER_BY_PET_NAME = (By.CSS_SELECTOR, '#petName')
-    COCO_PET_BY_PET_NAME_FILTER = (By.CLASS_NAME, 'pi pi-thumbs-up')
+    FILTER_BY_PET_TYPE_BUTTON = (By.ID, 'typesSelector')
+    DOG_PET_TYPE_FILTER = (By.ID, 'pv_id_2_0')
+    FILTER_BY_PET_NAME = (By.ID, 'petName')
+    LIKE_FOR_PET_BUTTON = (By.XPATH, '//*[@id="app"]/main/div/div[2]/div[2]/div/div/div/div[3]/div[2]/span[1]/i')
     REGISTER_BUTTON = (By.CSS_SELECTOR, '#app > header > div > ul > li:nth-child(2) > a')
 
 

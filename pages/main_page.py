@@ -1,5 +1,7 @@
 import time
 
+from selenium.webdriver import Keys
+
 from .locators import MainPageLocators
 from .base_page import BasePage
 
@@ -22,13 +24,13 @@ class MainPage(BasePage):
     def filter_by_pet_name(self):
         pet_name_input = self.browser.find_element(*MainPageLocators.FILTER_BY_PET_NAME)
         pet_name_input.send_keys('Rosi')
-        pet_name_input.submit()
+        pet_name_input.send_keys(Keys.RETURN)
 
     def like_for_coco(self):
         pet_name_input = self.browser.find_element(*MainPageLocators.FILTER_BY_PET_NAME)
         pet_name_input.send_keys('Coco')
-        pet_name_input.submit()
-        time.sleep(3)
-        like_button = self.browser.find_element(*MainPageLocators.COCO_PET_BY_PET_NAME_FILTER)
+        pet_name_input.send_keys(Keys.RETURN)
+        time.sleep(2)
+        like_button = self.browser.find_element(*MainPageLocators.LIKE_FOR_PET_BUTTON)
         like_button.click()
 
