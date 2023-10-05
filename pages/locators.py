@@ -25,14 +25,12 @@ class RegisterPageLocators:
     SUBMIT_BUTTON = (By.XPATH, '/html/body/div[1]/main/fieldset/div/div/form/div[4]/button')
 
 
-
 class ProfilePageLocators:
     BARON_PET = (By.CSS_SELECTOR, '#app > main > div > div > div.p-dataview-content > div > div:nth-child(1) > div')
     ROSI_PET = (By.XPATH, '//*[@id="app"]/main/div/div/div[2]/div/div[2]/div')
     LUCKY_PET = (By.XPATH, '//*[@id="app"]/main/div/div/div[2]/div/div[3]/div')
     BELLIS_PET = (By.XPATH, '//*[@id="app"]/main/div/div/div[2]/div/div[4]/div')
-    ADD_PET_BUTTON = (
-    By.CSS_SELECTOR, '#app > main > div > div > div.p-dataview-header > div > div:nth-child(1) > button')
+    ADD_PET_BUTTON = (By.CSS_SELECTOR, '#app > main > div > div > div.p-dataview-header > div > div:nth-child(1) > button')
     EDIT_PET_BUTTON = (By.XPATH, '//*[@id="app"]/main/div/div/div[2]/div/div[1]/div/div[2]/button[1]')
     DELETE_PET_BUTTON = (By.XPATH, '//*[@id="app"]/main/div/div/div[2]/div/div[5]/div/div[2]/button[2]')
     PET_DELETE_ACCEPTION = (By.CLASS_NAME, 'p-button p-component p-confirm-popup-accept p-button-sm')

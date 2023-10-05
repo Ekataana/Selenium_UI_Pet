@@ -12,11 +12,3 @@ def test_go_to_login(browser):
     page.go_to_login_button()
     time.sleep(1)
     browser.save_screenshot('result6.png')
-
-
-# def test_go_to_register_page(browser):
-#     page = LoginPage(browser, login_link)
-#     page.open()
-#     page.go_to_register_page()
-#     time.sleep(1)
-#     browser.save_screenshot('result6a.png')
